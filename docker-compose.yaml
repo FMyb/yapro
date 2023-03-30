@@ -1,0 +1,10 @@
+version: '3'
+services:
+  message-server:
+    container_name: yapro-server
+    build:
+      context: docker-yapro-server
+      dockerfile: Dockerfile
+    image: yapro-server:latest
+    ports:
+      - "8080:8080"
